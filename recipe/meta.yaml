@@ -1,5 +1,5 @@
 {% set name = "twilio" %}
-{% set version = "6.46.0" %}
+{% set version = "6.47.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9d591617b22e75b26cda11a10d353e2001d990a7ca1696d92e50abfc6ecdcb73
+  sha256: effb4d6e9e9a9069065fbe21dea844597376ae6d6333626f14b05ba6b35bbb22
 
 build:
   number: 0
@@ -38,7 +38,7 @@ about:
   home: https://github.com/twilio/twilio-python/
   license: MIT
   license_family: MIT
-  license_file: LICENSE.md
+  license_file: LICENSE
   summary: Twilio API client and TwiML generator
 
 extra:
