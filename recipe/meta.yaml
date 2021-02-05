@@ -2,7 +2,7 @@
 {% set version = "6.51.1" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=2.7
   run:
     - pyjwt ==1.7.1
-    - python
+    - python >=2.7
     - pytz
     - requests >=2.0.0
     - six
