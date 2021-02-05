@@ -2,7 +2,7 @@
 {% set version = "6.51.1" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name }}
   version: {{ version }}
 
 source:
@@ -10,22 +10,24 @@ source:
   sha256: b3357f7db6768080aa7e15aad484abc7b5153de15d9aae0c1f3436e6151b0aeb
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=2.7
   run:
-    - pyjwt >=1.4.2
-    - python
+    - pyjwt ==1.7.1
+    - python >=2.7
     - pytz
     - requests >=2.0.0
     - six
 
 test:
+  requires:
+    - pip
   imports:
     - twilio
     - twilio.base
@@ -33,6 +35,8 @@ test:
     - twilio.jwt
     - twilio.rest
     - twilio.twiml
+  commands:
+    - pip check
 
 about:
   home: https://github.com/twilio/twilio-python/
