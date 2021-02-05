@@ -19,13 +19,15 @@ requirements:
     - pip
     - python
   run:
-    - pyjwt >=1.4.2
+    - pyjwt ==1.7.1
     - python
     - pytz
     - requests >=2.0.0
     - six
 
 test:
+  requires:
+    - pip
   imports:
     - twilio
     - twilio.base
@@ -33,6 +35,8 @@ test:
     - twilio.jwt
     - twilio.rest
     - twilio.twiml
+  commands:
+    - pip check
 
 about:
   home: https://github.com/twilio/twilio-python/
