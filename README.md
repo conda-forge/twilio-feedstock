@@ -1,11 +1,11 @@
-About twilio
-============
+About twilio-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/twilio-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/twilio/twilio-python/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/twilio-feedstock/blob/main/LICENSE.txt)
 
 Summary: Twilio API client and TwiML generator
 
