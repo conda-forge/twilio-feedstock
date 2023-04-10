@@ -36,6 +36,7 @@ test:
     - twilio.jwt
     - twilio.rest
     - twilio.twiml
+  # Un-comment after https://github.com/twilio/twilio-python/issues/708 is resolved.
   # commands:
   #   - pip check
 
