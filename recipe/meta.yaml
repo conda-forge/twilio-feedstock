@@ -10,7 +10,7 @@ source:
   sha256: a31863119655cd3643f788099f6ea3fe74eea59ce3f65600f9a4931301311c08
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -36,9 +36,8 @@ test:
     - twilio.jwt
     - twilio.rest
     - twilio.twiml
-  # Un-comment after https://github.com/twilio/twilio-python/issues/708 is resolved.
-  # commands:
-  #   - pip check
+  commands:
+    - pip check
 
 about:
   home: https://github.com/twilio/twilio-python/
