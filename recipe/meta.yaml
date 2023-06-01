@@ -1,5 +1,5 @@
 {% set name = "twilio" %}
-{% set version = "8.2.1" %}
+{% set version = "8.2.2" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 66fe6a18199955b8abce2699e533b56f605a22d585c3f0b1820113ec068a0b51
+  sha256: 6470a8bb6b1e240dd48c77f17e29fc1ee9041b75707bf437f880a585b6c722bc
 
 build:
   number: 0
