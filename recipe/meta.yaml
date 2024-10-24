@@ -1,5 +1,5 @@
 {% set name = "twilio" %}
-{% set version = "9.3.3" %}
+{% set version = "9.3.4" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4750f7b512258fa1cf61f6666f3f93ddbf850449745cbbc3beec6ea59a813153
+  sha256: 38a6ab04752f44313dcf736eae45236a901528d3f53dfc21d3afd33539243c7f
 
 build:
   number: 0
@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - python >=3.7
+    - setuptools
   run:
     - PyJWT >=2.0.0,<3.0.0
     - python >=3.7
