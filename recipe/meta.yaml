@@ -1,5 +1,5 @@
 {% set name = "twilio" %}
-{% set version = "9.11.1" %}
+{% set version = "9.11.2" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bb700599c721f49a437bf6ee03b0f9cc729752646873985c94b4affaf88f113c
+  sha256: 002df1b366ff193bf8748f68ef2ef0dda96d500c3a14898175c159633fd88643
 
 build:
   number: 0
